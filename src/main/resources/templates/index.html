@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+<body>
+<a th:href="@{/postForm}" class="text-blue-600">Go to New Post</a>
+<ul th:each = "post:${list}">
+    <li th:text = "${post.getMemo()}">
+    </li>
+</ul>
+</body>
+</html>
