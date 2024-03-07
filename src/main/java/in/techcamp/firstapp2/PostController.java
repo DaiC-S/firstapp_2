@@ -22,7 +22,7 @@ public class PostController {
     }
 
     @GetMapping
-    public String showList(Model model){
+    public String index(Model model){
         var postList = postRepository.findAll();
         model.addAttribute("list", postList);
         return "index";

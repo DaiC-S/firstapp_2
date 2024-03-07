@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="output.css" rel="stylesheet">
+    <link href="/output.css" rel="stylesheet">
 </head>
 <body>
 <a th:href="@{/postForm}" class="text-blue-600">Go to New Post</a>
@@ -11,5 +11,7 @@
     <li th:text = "${post.getMemo()}">
     </li>
 </ul>
+    <div id="demo"></div>
+    <script src="/javascript/bundle.js"></script>
 </body>
 </html>
